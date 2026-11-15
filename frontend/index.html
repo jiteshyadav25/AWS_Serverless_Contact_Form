@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Serverless Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Send us a message using AWS Serverless Technology.</p>
+
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                maxlength="100"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                maxlength="254"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                maxlength="5000"
+                required
+            ></textarea>
+
+            <button type="submit" id="submitBtn">
+                Submit Message
+            </button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
